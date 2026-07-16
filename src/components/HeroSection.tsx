@@ -1,25 +1,74 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
-    <section className="text-center py-20">
-      <h1 className="text-4xl font-bold">
-        Nome Artista
-      </h1>
+    <section className="max-w-7xl mx-auto px-12 py-20">
 
-      <p className="mt-4 text-lg">
-        Illustratore, autore di fumetti e fotografo analogico.
-      </p>
+      <div className="grid grid-cols-2 gap-16 items-center">
 
-      <p className="mt-4">
-        Racconto storie attraverso immagini, inchiostro e pellicola.
-      </p>
+        <div>
 
-      <div className="flex gap-4 justify-center mt-6">
-        <Link to="/portfolio" className="px-4 py-2 bg-black text-white rounded">Portfolio</Link>
+          <p
+            className="uppercase tracking-[0.3em] text-sm mb-4"
+            style={{ color: "var(--color-accent)" }}
+          >
+            Portfolio Artistico
+          </p>
 
-        <Link to="/about" className="px-4 py-2 border rounded">About</Link>
+          <h1
+            className="text-6xl font-bold leading-tight"
+            style={{ color: "var(--color-text)" }}
+          >
+            Kibasito
+          </h1>
+
+          <h2
+            className="text-2xl mt-4"
+            style={{ color: "var(--color-text-secondary)" }}
+          >
+            Illustratore • Mangaka • Fotografo Analogico
+          </h2>
+
+          <p
+            className="mt-8 text-lg leading-8 max-w-xl"
+            style={{ color: "var(--color-text-secondary)" }}
+          >
+            Racconto storie attraverso immagini, fumetti e fotografia analogica.
+            Ogni progetto nasce dall'incontro tra tecnica, immaginazione e ricerca.
+          </p>
+
+          <div className="flex gap-4 mt-10">
+
+            <Link
+              to="/portfolio"
+              className="px-6 py-3 rounded-lg bg-amber-500 text-black font-semibold hover:bg-amber-400 transition-colors"
+            >
+              Esplora il Portfolio
+            </Link>
+
+            <Link
+              to="/about"
+              className="px-6 py-3 rounded-lg border border-zinc-600 hover:border-amber-500 transition-colors"
+            >
+              Chi sono
+            </Link>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <img
+            src="/hero.jpg"
+            alt="Opera principale"
+            className="rounded-2xl shadow-2xl object-cover w-full h-[650px]"
+          />
+
+        </div>
+
       </div>
+
     </section>
   );
 }
