@@ -9,7 +9,6 @@ export default function Navbar() {
         borderColor: "var(--color-text-secondary)",
       }}
     >
-      {/* Logo e descrizione */}
 
       <div>
         <h1
@@ -27,7 +26,6 @@ export default function Navbar() {
         </p>
       </div>
 
-      {/* Menu */}
 
       <ul className="flex gap-8 text-lg font-medium">
         <li>

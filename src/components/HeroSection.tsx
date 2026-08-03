@@ -60,7 +60,6 @@ export default function HeroSection() {
         <div>
 
           <img
-            src="/hero.jpg"
             alt="Opera principale"
             className="rounded-2xl shadow-2xl object-cover w-full h-[650px]"
           />
