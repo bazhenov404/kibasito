@@ -1,28 +1,49 @@
 type ProjectCardProps = {
   title: string;
   description: string;
-  imageUrl?: string;
+  imageUrl: string;
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className="border rounded p-6 shadow transition duration-300 hover:shadow-xl hover:-translate-y-2">
-
+    <article
+      className="
+        rounded-2xl
+        overflow-hidden
+        transition-all
+        duration-300
+        hover:-translate-y-2
+        hover:shadow-2xl
+      "
+      style={{
+        backgroundColor: "var(--color-surface)",
+        boxShadow: "var(--shadow)",
+      }}
+    >
       <img
         src={props.imageUrl}
         alt={props.title}
-        className="h-48 w-full object-cover rounded mb-4"
+        className="w-full h-64 object-cover"
       />
 
-      <h2 className="text-xl font-bold">
-        {props.title}
-      </h2>
+      <div className="p-6">
 
-      <p className="mt-2">
-        {props.description}
-      </p>
+        <h3
+          className="text-2xl font-bold"
+          style={{ color: "var(--color-text)" }}
+        >
+          {props.title}
+        </h3>
 
-    </div>
+        <p
+          className="mt-3 leading-7"
+          style={{ color: "var(--color-text-secondary)" }}
+        >
+          {props.description}
+        </p>
+
+      </div>
+    </article>
   );
 }
 
