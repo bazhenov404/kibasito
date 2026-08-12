@@ -1,7 +1,7 @@
 type ProjectCardProps = {
   title: string;
   description: string;
-  imageUrl: string;
+  imageUrl: string | undefined;
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -29,7 +29,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       <div className="p-6">
 
         <h3
-          className="text-2xl font-bold"
+          className="font-display text-2xl font-semibold leading-none"
           style={{ color: "var(--color-text)" }}
         >
           {props.title}

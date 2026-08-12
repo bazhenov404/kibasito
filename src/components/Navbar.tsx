@@ -12,7 +12,7 @@ export default function Navbar() {
 
       <div>
         <h1
-          className="text-3xl font-bold"
+          className="font-display text-3xl font-bold leading-none"
           style={{ color: "var(--color-text)" }}
         >
           Kibasito

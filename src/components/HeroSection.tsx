@@ -16,7 +16,7 @@ export default function HeroSection() {
           </p>
 
           <h1
-            className="text-6xl font-bold leading-tight"
+            className="font-display text-6xl font-bold leading-tight leading-none"
             style={{ color: "var(--color-text)" }}
           >
             Kibasito

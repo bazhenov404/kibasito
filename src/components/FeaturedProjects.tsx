@@ -9,7 +9,7 @@ export default function FeaturedProjects() {
       <div className="text-center mb-14">
 
         <h2
-          className="text-4xl font-bold"
+          className="font-display text-4xl font-bold leading-none"
           style={{ color: "var(--color-text)" }}
         >
           Lavori in evidenza
