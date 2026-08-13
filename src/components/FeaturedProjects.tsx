@@ -4,12 +4,12 @@ import { projects } from "../data/projects";
 
 export default function FeaturedProjects() {
   return (
-    <section className="max-w-7xl mx-auto px-12 py-20">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
 
       <div className="text-center mb-14">
 
         <h2
-          className="font-display text-4xl font-bold leading-none"
+          className="font-display text-4xl md:text-5xl font-bold"
           style={{ color: "var(--color-text)" }}
         >
           Lavori in evidenza
@@ -25,7 +25,7 @@ export default function FeaturedProjects() {
 
       </div>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {projects.map((project) => (
           <ProjectCard
