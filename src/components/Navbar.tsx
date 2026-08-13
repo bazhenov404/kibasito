@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav
-      className="flex items-center justify-between px-12 py-8 border-b"
+    <nav className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 px-6 md:px-12 py-6 md:py-8 border-b"
       style={{
         backgroundColor: "var(--color-surface)",
         borderColor: "var(--color-text-secondary)",
@@ -12,7 +11,7 @@ export default function Navbar() {
 
       <div>
         <h1
-          className="font-display text-3xl font-bold leading-none"
+          className="font-display text-3xl md:text-4xl font-bold leading-none"
           style={{ color: "var(--color-text)" }}
         >
           Kibasito
@@ -27,7 +26,7 @@ export default function Navbar() {
       </div>
 
 
-      <ul className="flex gap-8 text-lg font-medium">
+      <ul className="flex flex-wrap justify-center gap-6 md:gap-8 text-base md:text-lg font-medium">
         <li>
           <Link
             to="/"
