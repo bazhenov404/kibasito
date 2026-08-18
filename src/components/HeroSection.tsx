@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import kiba from "../assets/images/kiba.jpg";
+
 export default function HeroSection() {
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
@@ -60,6 +62,7 @@ export default function HeroSection() {
 
           <img
             alt="Opera principale"
+            src={kiba}
             className="w-full h-[420px] md:h-[520px] lg:h-[650px] object-cover rounded-2xl"
           />
 
