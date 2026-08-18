@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
-    <section className="max-w-7xl mx-auto px-12 py-20">
-
-      <div className="grid grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
         <div>
 
@@ -16,7 +15,7 @@ export default function HeroSection() {
           </p>
 
           <h1
-            className="font-display text-6xl font-bold leading-tight leading-none"
+            className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-none"
             style={{ color: "var(--color-text)" }}
           >
             Kibasito
@@ -30,14 +29,14 @@ export default function HeroSection() {
           </h2>
 
           <p
-            className="mt-8 text-lg leading-8 max-w-xl"
+            className="text-xl md:text-2xl mt-4"
             style={{ color: "var(--color-text-secondary)" }}
           >
             Racconto storie attraverso immagini, fumetti e fotografia analogica.
             Ogni progetto nasce dall'incontro tra tecnica, immaginazione e ricerca.
           </p>
 
-          <div className="flex gap-4 mt-10">
+          <div className="flex flex-col sm:flex-row gap-4 mt-10">
 
             <Link
               to="/portfolio"
@@ -61,7 +60,7 @@ export default function HeroSection() {
 
           <img
             alt="Opera principale"
-            className="rounded-2xl shadow-2xl object-cover w-full h-[650px]"
+            className="w-full h-[420px] md:h-[520px] lg:h-[650px] object-cover rounded-2xl"
           />
 
         </div>
