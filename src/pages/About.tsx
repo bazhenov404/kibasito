@@ -1,6 +1,7 @@
 import { education } from "../data/education";
 import TimelineCard from "../components/TimelineCard";
 import { experience } from "../data/experience";
+import { skills } from "../data/skills";
 import kiba from "../assets/images/kiba.jpg";
 
 export default function About() {
@@ -80,6 +81,39 @@ export default function About() {
           <TimelineCard key={item.id} item={item} />
         ))}
       </div>
+      <div className="mt-24 mb-12">
+        <p
+          className="uppercase tracking-[0.3em] text-sm mb-4"
+          style={{ color: "var(--color-accent)" }}
+        >
+          Competenze
+        </p>
+        <h2 className = "font-display text-4xl md:text-6xl font-bold">
+          Cosa faccio
+        </h2>
+      </div>
+
+<div className="flex flex-wrap gap-4">
+  {skills.map((skills) => (
+    <span
+      key={skills}
+      className="
+        px-5 py-2
+        rounded-full
+        border
+        text-sm md:text-base
+        transition-colors
+        hover:border-amber-500
+      "
+      style={{
+        backgroundColor: "var(--color-surface)",
+        borderColor: "var(--color-text-secondary)",
+      }}
+    >
+      {skills}
+    </span>
+  ))}
+</div>
     </section>
   );
 }
