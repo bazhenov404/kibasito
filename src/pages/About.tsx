@@ -114,6 +114,83 @@ export default function About() {
     </span>
   ))}
 </div>
+
+<div className="mt-24">
+  <p
+    className="uppercase tracking-[0.3em] text-sm mb-4"
+    style={{ color: "var(--color-accent)" }}
+  >
+    Curriculum
+  </p>
+
+  <h2 className="font-display text-5xl md:text-6xl font-bold">
+    Percorso completo
+  </h2>
+
+  <p
+    className="mt-4 max-w-2xl text-lg leading-8"
+    style={{ color: "var(--color-text-secondary)" }}
+  >
+    Se vuoi approfondire il mio percorso professionale e formativo,
+    puoi consultare il curriculum completo.
+  </p>
+</div>
+<div
+  className="mt-24 p-8 md:p-10 rounded-2xl"
+  style={{ backgroundColor: "var(--color-surface)" }}
+>
+  <p
+    className="uppercase tracking-[0.3em] text-sm mb-4"
+    style={{ color: "var(--color-accent)" }}
+  >
+    Contatti
+  </p>
+
+  <h2 className="font-display text-4xl md:text-5xl font-bold">
+    Hai un progetto in mente?
+  </h2>
+
+  <p
+    className="mt-4 max-w-2xl leading-7"
+    style={{ color: "var(--color-text-secondary)" }}
+  >
+    Per collaborazioni, commissioni o informazioni puoi contattarmi
+    via email o attraverso i miei profili social.
+  </p>
+
+  <div className="flex flex-col sm:flex-row gap-4 mt-8">
+    <a
+      href="mailto:email@example.com"
+      className="
+        px-6 py-3
+        rounded-lg
+        bg-amber-500
+        text-black
+        font-semibold
+        text-center
+        hover:bg-amber-400
+        transition-colors
+      "
+    >
+      Scrivimi
+    </a>
+
+    <a
+      href="#"
+      className="
+        px-6 py-3
+        rounded-lg
+        border
+        border-zinc-600
+        text-center
+        hover:border-amber-500
+        transition-colors
+      "
+    >
+      Instagram
+    </a>
+  </div>
+</div>
     </section>
   );
 }
