@@ -10,18 +10,21 @@ const projects: Project[]=[
         title: "Samurai Rosso",
         description: "Studio fantasy",
         imageUrl: samurai,
+        category: "Illustrazione"
     },
     {
         id: 2,
         title: "Cyber Ninja",
         description: "Concept Sci-Fi",
         imageUrl: cyberpunk,
+        category: "Illustrazione"
     },
     {
         id: 3,
         title: "Forest Spirit",
         description: "Illustrazione naturale",
         imageUrl: forest,
+        category: "Illustrazione"
     },
 ];
 
