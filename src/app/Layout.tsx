@@ -8,11 +8,13 @@ export default function Layout() {
     <>
       <Navbar />
 
-      <main>
+      <main className="min-h-screen">
         <Outlet />
       </main>
 
-      <Footer />
+      <div className="mt-18">
+        <Footer />
+      </div>
     </>
   );
 }

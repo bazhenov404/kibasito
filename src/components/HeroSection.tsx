@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function HeroSection() {
   return (
-    <Section>
+    <Section className="pt-24 pb-28 md:pt-28 md:pb-32 lg:pt-32 lg:pb-36">
 
       <div className="max-w-4xl mx-auto text-center">
 

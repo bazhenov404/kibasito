@@ -18,7 +18,7 @@ export default function Section({
 
   return (
     <section
-      className={`px-6 md:px-10 lg:px-12 py-20 md:py-24 ${className}`}
+      className={`w-full px-6 md:px-10 lg:px-12 py-20 md:py-24 lg:py-28 ${className}`}
       style={{ backgroundColor }}
     >
       <div className="max-w-7xl mx-auto">

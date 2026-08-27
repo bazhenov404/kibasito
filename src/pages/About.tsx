@@ -10,7 +10,7 @@ import kiba from "../assets/images/kiba.jpg";
 export default function About() {
   return (
     <>
-      <Section>
+      <Section className="lg:py-36">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
           <div>
             <img
@@ -29,7 +29,7 @@ export default function About() {
             </p>
 
             <h1 className="font-display text-5xl md:text-6xl font-bold">
-              Kibasito
+              Stefano B.
             </h1>
 
             <p
@@ -160,9 +160,9 @@ export default function About() {
         </p>
       </Section>
 
-      <Section background="surface">
+      <Section>
         <div
-          className="p-8 md:p-10 rounded-2xl"
+          className="p-8 md:p-12 rounded-2xl"
           style={{ backgroundColor: "var(--color-background)" }}
         >
           <p
