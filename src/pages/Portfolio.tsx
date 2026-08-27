@@ -1,10 +1,12 @@
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
+import Section from "../components/Section";
 
 export default function Portfolio() {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
-      <div className="mb-12">
+    <Section>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
+        <div className="mb-12">
         <p
           className="uppercase tracking-[0.3em] text-sm mb-4"
           style={{ color: "var(--color-accent)" }}
@@ -51,6 +53,7 @@ export default function Portfolio() {
           />
         ))}
       </div>
-    </section>
+    </div>
+    </Section>
   );
 }

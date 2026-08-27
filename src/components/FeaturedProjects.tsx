@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
+import Section from "./Section";
 import { projects } from "../data/projects";
 
 export default function FeaturedProjects() {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
+    <Section background="surface" >
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
+
 
       <div className="text-center mb-14">
 
         <h2
-          className="font-display text-4xl md:text-5xl font-bold"
+          className="font-display text-4xl md:text-5xl"
           style={{ color: "var(--color-text)" }}
         >
           Lavori in evidenza
@@ -48,7 +51,7 @@ export default function FeaturedProjects() {
         </Link>
 
       </div>
-
-    </section>
+    </div>
+    </Section>
   );
 }

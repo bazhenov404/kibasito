@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import Section from "./Section";
 
 export default function HeroSection() {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-20 md:py-28">
+    <Section>
 
       <div className="max-w-4xl mx-auto text-center">
 
@@ -55,6 +56,6 @@ export default function HeroSection() {
 
       </div>
 
-    </section>
+    </Section>
   );
 }
