@@ -7,12 +7,10 @@ export default function FeaturedProjects() {
   return (
     <Section background="surface" >
       <div >
-
-
       <div className="text-center mb-14">
 
         <h2
-          className="font-display text-4xl md:text-5xl"
+          className="font-display font-bold text-4xl md:text-5xl"
           style={{ color: "var(--color-text)" }}
         >
           Lavori in evidenza
