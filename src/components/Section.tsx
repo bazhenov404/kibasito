@@ -18,10 +18,10 @@ export default function Section({
 
   return (
     <section
-      className={`w-full px-6 md:px-10 lg:px-12 py-20 md:py-24 lg:py-28 ${className}`}
+      className={`py-16 md:py-20 ${className}`}
       style={{ backgroundColor }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         {children}
       </div>
     </section>

@@ -163,7 +163,7 @@ export default function About() {
       <Section>
         <div
           className="p-8 md:p-12 rounded-2xl"
-          style={{ backgroundColor: "var(--color-background)" }}
+          style={{ backgroundColor: "var(--color-surface)" }}
         >
           <p
             className="uppercase tracking-[0.3em] text-sm mb-4"

@@ -3,10 +3,8 @@ import Section from "./Section";
 
 export default function HeroSection() {
   return (
-    <Section className="pt-24 pb-28 md:pt-28 md:pb-32 lg:pt-32 lg:pb-36">
-
+    <Section>
       <div className="max-w-4xl mx-auto text-center">
-
         <p
           className="uppercase tracking-[0.3em] text-sm mb-4"
           style={{ color: "var(--color-accent)" }}
@@ -33,11 +31,11 @@ export default function HeroSection() {
           style={{ color: "var(--color-text-secondary)" }}
         >
           Racconto storie attraverso immagini, fumetti e fotografia analogica.
-          Ogni progetto nasce dall'incontro tra tecnica, immaginazione e ricerca.
+          Ogni progetto nasce dall'incontro tra tecnica, immaginazione e
+          ricerca.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-
           <Link
             to="/portfolio"
             className="px-6 py-3 rounded-lg bg-amber-500 text-black font-semibold hover:bg-amber-400 transition-colors"
@@ -47,15 +45,13 @@ export default function HeroSection() {
 
           <Link
             to="/about"
-            className="px-6 py-3 rounded-lg border border-zinc-600 hover:border-amber-500 transition-colors"
+            className="px-6 py-3 rounded-lg border hover:border-amber-500 hover:bg-white/5 transition-colors"
+            style={{ borderColor: "var(--color-text-secondary)" }}
           >
             Chi sono
           </Link>
-
         </div>
-
       </div>
-
     </Section>
   );
 }

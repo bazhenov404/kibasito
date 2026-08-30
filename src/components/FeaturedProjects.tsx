@@ -6,7 +6,7 @@ import { projects } from "../data/projects";
 export default function FeaturedProjects() {
   return (
     <Section background="surface" >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 py-16 md:py-20">
+      <div >
 
 
       <div className="text-center mb-14">
