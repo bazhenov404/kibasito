@@ -15,7 +15,7 @@ export default function TimelineCard({ item }: TimelineCardProps) {
           {item.year}
         </p>
 
-        <h3 className="font-display text-2xl font-semibold mt-2">
+        <h3 className="font-display text-2xl md:text-3xl font-semibold mt-2">
           {item.title}
         </h3>
 
