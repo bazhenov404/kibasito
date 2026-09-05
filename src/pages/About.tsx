@@ -6,6 +6,7 @@ import TimelineCard from "../components/TimelineCard";
 import Section from "../components/Section";
 
 import kiba from "../assets/images/kiba.jpg";
+import Button from "../components/Button";
 
 export default function About() {
   return (
@@ -185,36 +186,13 @@ export default function About() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <a
-              href="mailto:email@example.com"
-              className="
-                px-6 py-3
-                rounded-lg
-                bg-amber-500
-                text-black
-                font-semibold
-                text-center
-                hover:bg-amber-400
-                transition-colors
-              "
-            >
+           <Button to="mailto:email@example.com">
               Scrivimi
-            </a>
+            </Button>
 
-            <a
-              href="#"
-              className="
-                px-6 py-3
-                rounded-lg
-                border
-                border-zinc-600
-                text-center
-                hover:border-amber-500
-                transition-colors
-              "
-            >
+           <Button to="https://www.instagram.com/maskedsuperhero/" variant="outline">
               Instagram
-            </a>
+            </Button>
           </div>
         </div>
       </Section>

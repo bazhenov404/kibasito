@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import Section from "./Section";
+import Button from "./Button";
 
 export default function HeroSection() {
   return (
@@ -16,7 +16,7 @@ export default function HeroSection() {
           className="font-display text-6xl md:text-7xl lg:text-8xl font-bold leading-none"
           style={{ color: "var(--color-text)" }}
         >
-          Kibasito
+          Stefano B.
         </h1>
 
         <h2
@@ -36,20 +36,9 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-          <Link
-            to="/portfolio"
-            className="px-6 py-3 rounded-lg bg-amber-500 text-black font-semibold hover:bg-amber-400 transition-colors"
-          >
-            Esplora il Portfolio
-          </Link>
+          <Button to="/portfolio">Esplora il Portfolio</Button>
 
-          <Link
-            to="/about"
-            className="px-6 py-3 rounded-lg border hover:border-amber-500 hover:bg-white/5 transition-colors"
-            style={{ borderColor: "var(--color-text-secondary)" }}
-          >
-            Chi sono
-          </Link>
+          <Button to="/about" variant="outline">Chi sono</Button>
         </div>
       </div>
     </Section>

@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import Section from "./Section";
 import { projects } from "../data/projects";
+import Button from "./Button";
 
 export default function FeaturedProjects() {
   return (
     <Section background="surface" >
-      <div >
+      <div>
       <div className="text-center mb-14">
 
         <h2
@@ -41,12 +41,7 @@ export default function FeaturedProjects() {
 
       <div className="flex justify-center mt-14">
 
-        <Link
-          to="/portfolio"
-          className="px-8 py-3 rounded-lg bg-amber-500 text-black font-semibold hover:bg-amber-400 transition-colors"
-        >
-          Vedi tutto il Portfolio
-        </Link>
+        <Button to="/portfolio">Vedi tutto il Portfolio</Button>
 
       </div>
     </div>

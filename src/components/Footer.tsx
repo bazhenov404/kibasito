@@ -10,13 +10,9 @@ export default function Footer() {
       }}
     >
       <div className="max-w-7xl mx-auto">
-
         <div className="flex flex-col md:flex-row md:justify-between gap-10">
-
           <div>
-            <h2 className="font-display text-3xl font-bold">
-              Kibasito
-            </h2>
+            <h2 className="font-display text-3xl font-bold">Stefano Barresi</h2>
 
             <p
               className="mt-2"
@@ -39,21 +35,22 @@ export default function Footer() {
               style={{ color: "var(--color-text-secondary)" }}
             >
               <a
+                href="https://www.instagram.com/maskedsuperhero/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-amber-500 transition-colors"
+              >
+                Instagram
+              </a>
+
+              <a
                 href="mailto:email@example.com"
                 className="hover:text-amber-500 transition-colors"
               >
                 Email
               </a>
-
-              <a
-                href="#"
-                className="hover:text-amber-500 transition-colors"
-              >
-                Instagram
-              </a>
             </div>
           </div>
-
         </div>
         <div
           className="
@@ -71,7 +68,7 @@ export default function Footer() {
             color: "var(--color-text-secondary)",
           }}
         >
-          <p>© 2026 Kibasito</p>
+          <p>© 2026 Bazhenov O.</p>
 
           <div className="flex gap-6">
             <Link
@@ -89,7 +86,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
       </div>
     </footer>
   );

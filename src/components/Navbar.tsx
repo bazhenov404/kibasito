@@ -14,7 +14,7 @@ export default function Navbar() {
           className="font-display text-3xl md:text-4xl font-bold leading-none"
           style={{ color: "var(--color-text)" }}
         >
-          Kibasito
+          Kibagami
         </h1>
 
         <p
