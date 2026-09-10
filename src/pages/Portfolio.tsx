@@ -1,8 +1,18 @@
+import { useState } from "react";
+
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import Section from "../components/Section";
 
 export default function Portfolio() {
+  const [activeCategory, setActiveCategory] = useState("Tutti");
+  const categories = ["Tutti", "Illustrazioni", "Manga", "Fotografia"];
+
+  const filteredProjects =
+    activeCategory === "Tutti"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
+
   return (
     <>
       <Section>
@@ -15,7 +25,7 @@ export default function Portfolio() {
           </p>
 
           <h1 className="font-display text-5xl md:text-6xl font-bold">
-            Tutti i lavori
+            {activeCategory === "Tutti" ? "Tutti i lavori" : activeCategory}
           </h1>
 
           <p
@@ -28,27 +38,25 @@ export default function Portfolio() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <button className="px-6 py-3 rounded-full bg-amber-500 text-black font-medium">
-            Tutti
-          </button>
-
-          <button className="px-6 py-3 rounded-full border border-zinc-600 hover:border-amber-500 transition-colors">
-            Illustrazione
-          </button>
-
-          <button className="px-6 py-3 rounded-full border border-zinc-600 hover:border-amber-500 transition-colors">
-            Manga
-          </button>
-
-          <button className="px-6 py-3 rounded-full border border-zinc-600 hover:border-amber-500 transition-colors">
-            Fotografia
-          </button>
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-6 py-3 rounded-full font-medium transition-colors ${
+                activeCategory === category
+                  ? "bg-amber-500 text-black"
+                  : "border border-zinc-600 hover:border-amber-500"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </Section>
 
       <Section background="surface">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}
               title={project.title}
