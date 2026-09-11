@@ -6,7 +6,9 @@ import Section from "../components/Section";
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("Tutti");
-  const categories = ["Tutti", "Illustrazioni", "Manga", "Fotografia"];
+  const categories = [
+  "Tutti",
+  ...new Set(projects.map((project) => project.category)),];
 
   const filteredProjects =
     activeCategory === "Tutti"
