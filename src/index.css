@@ -5,14 +5,13 @@
 :root {
   --font-display: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
-  --color-background: #18181b;
-  --color-surface: #27272a;
-  --color-text: #fafafa;
-  --color-text-secondary: #a1a1aa;
-  --color-accent: #f59e0b;
+  --color-background: #faf9f7;
+  --color-surface: #f0eeea;
+  --color-text: #2a2a28;
+  --color-text-secondary: #6b6b68;
+  --color-accent: #c9a876;
   --radius: 16px;
-  --shadow:
-    0 10px 25px rgba(0, 0, 0, 0.25);
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 @layer base {
