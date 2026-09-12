@@ -3,5 +3,5 @@ export type Artwork = {
     description: string;
     imageUrl: string;
     price: number;
-    availability: "available" | "sold";
+    available: boolean;
 };

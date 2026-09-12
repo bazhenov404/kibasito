@@ -1,13 +1,14 @@
 import ArtworkDisplay from "../components/ArtworkDisplay";
-import testImage from "../assets/images/samurai.jpg";
+import { currentArtwork } from "../data/artwork";
 
 export default function Home() {
   return (
     <ArtworkDisplay
-      imageUrl={testImage}
-      title="Samurai"
-      price={1500}
-      availability="available"
+      imageUrl={currentArtwork.imageUrl}
+      title={currentArtwork.title}
+      description={currentArtwork.description}
+      price={currentArtwork.price}
+      available={currentArtwork.available}
     />
   );
 }

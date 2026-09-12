@@ -6,5 +6,5 @@ export const currentArtwork: Artwork = {
     description: "Studio fantasy, illustrazione digitale",
     imageUrl: samurai,
     price: 100,
-    availability: "available",
+    available: true,
 };

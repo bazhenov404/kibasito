@@ -1,15 +1,17 @@
 type ArtworkDisplayProps = {
   imageUrl: string;
   title: string;
+  description: string;
   price: number;
-  availability: "available" | "sold";
+  available: boolean;
 };
 
 export default function ArtworkDisplay({
   imageUrl,
   title,
+  description,
   price,
-  availability,
+  available,
 }: ArtworkDisplayProps) {
   return (
     <main className="min-h-[80vh] flex items-center justify-center px-6 py-16">
@@ -17,8 +19,11 @@ export default function ArtworkDisplay({
         <img
           src={imageUrl}
           alt={title}
-          className="w-full max-h-[650px] object-contain rounded-2xl"
+          className="w-full max-h-162.5 object-contain rounded-2xl"
         />
+        <p className="mt-4 text-lg" style={{ color: "var(--color-text-secondary)" }}>
+          {description}
+        </p>
 
         <div className="mt-8">
           <h1
@@ -35,7 +40,7 @@ export default function ArtworkDisplay({
             {price} €
           </p>
 
-          {availability === "available" ? (
+          {available === true ? (
             <button
               type="button"
               className="mt-6 px-8 py-3 rounded-md font-medium transition-colors"
