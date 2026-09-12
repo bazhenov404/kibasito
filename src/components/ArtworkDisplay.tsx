@@ -14,7 +14,7 @@ export default function ArtworkDisplay({
   available,
 }: ArtworkDisplayProps) {
   return (
-    <main className="min-h-[80vh] flex items-center justify-center px-6 py-16">
+    <div className="min-h-[80vh] flex items-center justify-center px-6 py-16">
       <div className="w-full max-w-4xl text-center">
         <img
           src={imageUrl}
@@ -22,7 +22,7 @@ export default function ArtworkDisplay({
           className="w-full max-h-162.5 object-contain rounded-2xl"
         />
         <p className="mt-4 text-lg" style={{ color: "var(--color-text-secondary)" }}>
-          {description}
+          {title}
         </p>
 
         <div className="mt-8">
@@ -30,7 +30,7 @@ export default function ArtworkDisplay({
             className="text-3xl md:text-4xl font-display font-bold"
             style={{ color: "var(--color-text)" }}
           >
-            {title}
+            {description}
           </h1>
 
           <p
@@ -58,6 +58,6 @@ export default function ArtworkDisplay({
           )}
         </div>
       </div>
-    </main>
+    </div>
   );
 }
