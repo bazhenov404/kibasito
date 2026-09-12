@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -31,60 +32,39 @@ export default function Footer() {
             </h3>
 
             <div
-              className="flex flex-col gap-2"
+              className="flex gap-4"
               style={{ color: "var(--color-text-secondary)" }}
             >
               <a
                 href="https://www.instagram.com/maskedsuperhero/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-amber-500 transition-colors"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="Instagram"
               >
-                Instagram
+                <FaInstagram size={22} />
               </a>
-
               <a
+              
                 href="mailto:email@example.com"
-                className="hover:text-amber-500 transition-colors"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="Email"
               >
-                Email
+                <Mail size={22} />
               </a>
             </div>
           </div>
         </div>
+
         <div
-          className="
-            flex flex-col
-            md:flex-row
-            md:justify-between
-            gap-4
-            mt-10
-            pt-6
-            border-t
-            text-sm
-          "
+          className="mt-10 pt-6 border-t text-sm text-center md:text-left"
           style={{
-            borderColor: "var(--color-background)",
+            borderColor: "var(--color-text-secondary)",
             color: "var(--color-text-secondary)",
+            opacity: 0.7,
           }}
         >
-          <p>© 2026 Bazhenov O.</p>
-
-          <div className="flex gap-6">
-            <Link
-              to="/portfolio"
-              className="hover:text-amber-500 transition-colors"
-            >
-              Portfolio
-            </Link>
-
-            <Link
-              to="/about"
-              className="hover:text-amber-500 transition-colors"
-            >
-              About
-            </Link>
-          </div>
+          <p>© 2026 Stefano Barresi</p>
         </div>
       </div>
     </footer>
