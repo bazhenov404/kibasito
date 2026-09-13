@@ -23,19 +23,28 @@ export default function ArtworkDisplay({
 
         <div className="relative">
           <img
-            src={imageUrl}
-            alt={title}
-            className="w-full max-h-162.5 object-contain rounded-2xl"
-          />
+  src={imageUrl}
+  alt={title}
+  className={`
+    w-full max-h-162.5 object-contain rounded-2xl
+    transition-all duration-1000 ease-out
+    ${isOpen ? "scale-100 blur-0" : "scale-[0.98] blur-[2px]"}
+  `}
+/>
 
-          {!isOpen && (
             <div
-              className="
-                absolute inset-0
-                flex items-center justify-center
-                rounded-2xl
-                backdrop-blur-sm
-              "
+             className={`
+  absolute inset-0
+  flex items-center justify-center
+  rounded-2xl
+  backdrop-blur-sm
+  transition-all duration-1000 ease-out
+  ${
+    isOpen
+      ? "opacity-0 pointer-events-none"
+      : "opacity-100"
+  }
+`}
               style={{
                 backgroundColor: "rgba(250, 249, 247, 0.88)",
               }}
@@ -60,7 +69,6 @@ export default function ArtworkDisplay({
                 Apri l'opera
               </button>
             </div>
-          )}
         </div>
 
         <div className="mt-8">
