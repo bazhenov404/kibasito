@@ -20,39 +20,34 @@ export default function ArtworkDisplay({
   return (
     <div className="min-h-[80vh] flex items-center justify-center px-6 py-16">
       <div className="w-full max-w-4xl text-center">
-
         <div className="relative">
           <img
-  src={imageUrl}
-  alt={title}
-  className={`
-    w-full max-h-162.5 object-contain rounded-2xl
-    transition-all duration-1000 ease-out
-    ${isOpen ? "scale-100 blur-0" : "scale-[0.98] blur-[2px]"}
-  `}
-/>
+            src={imageUrl}
+            alt={title}
+            className={`
+  w-full max-h-162.5 object-contain rounded-2xl
+  transition-all duration-1000 ease-out
+  ${isOpen ? "scale-100 blur-none" : "scale-[0.98] blur-[2px]"}
+`}
+          />
 
-            <div
-             className={`
+          <div
+            className={`
   absolute inset-0
   flex items-center justify-center
   rounded-2xl
   backdrop-blur-sm
   transition-all duration-1000 ease-out
-  ${
-    isOpen
-      ? "opacity-0 pointer-events-none"
-      : "opacity-100"
-  }
+  ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"}
 `}
-              style={{
-                backgroundColor: "rgba(250, 249, 247, 0.88)",
-              }}
-            >
-              <button
-                type="button"
-                onClick={() => setIsOpen(true)}
-                className="
+            style={{
+              backgroundColor: "rgba(250, 249, 247, 0.88)",
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => setIsOpen(true)}
+              className="
                   px-6 py-3
                   rounded-full
                   font-medium
@@ -60,15 +55,15 @@ export default function ArtworkDisplay({
                   transition-transform
                   hover:scale-105
                 "
-                style={{
-                  backgroundColor: "var(--color-surface)",
-                  color: "var(--color-text)",
-                  border: "1px solid var(--color-accent)",
-                }}
-              >
-                Apri l'opera
-              </button>
-            </div>
+              style={{
+                backgroundColor: "var(--color-surface)",
+                color: "var(--color-text)",
+                border: "1px solid var(--color-accent)",
+              }}
+            >
+              Apri l'opera
+            </button>
+          </div>
         </div>
 
         <div className="mt-8">
@@ -113,7 +108,6 @@ export default function ArtworkDisplay({
             </p>
           )}
         </div>
-
       </div>
     </div>
   );
